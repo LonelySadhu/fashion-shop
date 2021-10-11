@@ -1,0 +1,67 @@
+:root {
+        --black: #222222;
+        --light-pink: #F1E4E6;
+
+}
+
+.page {
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 17px;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: var(--black);
+}
+
+.header__nav {
+    display: none;
+}
+
+.header__wrp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 75px;
+}
+.header__logo {
+    margin: 0 41px 0 0;
+}
+
+.header__logo {
+    margin: 0 0 0 31px;
+}
+
+.header__menu-btn {
+    border: none;
+    background-color: transparent;
+}
+
+.brand {
+    display: flex;    
+}
+
+.brand__wrp {
+    background-color: var(--light-pink);
+    flex-grow: 1;
+    padding: 0 0 0 92px;
+}
+
+.brand__title {
+    font-family: Lato;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 58px;
+    text-transform: uppercase;
+}
+
+.brand__subtitle {
+    display: flex;
+}
