@@ -1,7 +1,7 @@
 :root {
-        --black: #222222;
-        --light-pink: #F1E4E6;
-
+    --black: #222222;
+    --light-pink: #F1E4E6;
+    --bright-pink: #F16D7F;
 }
 
 .page {
@@ -31,6 +31,7 @@
     align-items: center;
     min-height: 75px;
 }
+
 .header__logo {
     margin: 0 41px 0 0;
 }
@@ -45,23 +46,92 @@
 }
 
 .brand {
-    display: flex;    
+    display: flex;
+    height: 764px;
+}
+
+.brand__image {
+    min-width: 800px;
+    background-color: var(--light-pink);
+    background-image: url(img/upper-man.png);
 }
 
 .brand__wrp {
     background-color: var(--light-pink);
     flex-grow: 1;
-    padding: 0 0 0 92px;
+    /* padding: 0 0 0 92px; */
+    display: flex;
+    align-items: center;
 }
 
 .brand__title {
+
     font-family: Lato;
     font-size: 48px;
     font-weight: 900;
     line-height: 58px;
     text-transform: uppercase;
+
+
 }
 
 .brand__subtitle {
     display: flex;
+    font-size: 37px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 44px;
+    font-family: Lato;
+
+}
+
+.brand__subtitle-pink {
+    margin-left: 5px;
+    color: var(--bright-pink);
+
+}
+
+.sales {
+    margin-top: 65px;
+}
+
+.sales__card-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sales__card {
+    position: absolute;
+}
+
+.sales__text {
+    position: relative;
+    bottom: 155px;
+    left: 140px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 21px;
+    font-size: 18px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.sales__title {
+    position: relative;
+    bottom: 145px;
+    left: 140px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    font-size: 28px;
+    color: var(--bright-pink);
+    text-transform: uppercase;
+}
+
+.sales_wide-card {
+    position: relative;
+    bottom: 120px;
+    left: 490px;
 }

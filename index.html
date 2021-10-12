@@ -1,4 +1,3 @@
-!,
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <title>Fashion-shop</title>
 </head>
@@ -28,13 +27,13 @@
                 <ul class="header__menu-list">
                     <li class="header__menu-item menu-item">
                         <h3 class="menu-item__title">man</h3>
-                    </li>   
-                    <li class="menu-item__sub-item" >Accessories</li>
+                    </li>
+                    <li class="menu-item__sub-item">Accessories</li>
                     <li class="menu-item__sub-item">Bags</li>
                     <li class="menu-item__sub-item">Denim</li>
                     <li class="menu-item__sub-item">T-Shirts</li>
                 </ul>
-                
+
                 <ul>
                     <li class="header__menu-item menu-item">
                         <h3 class="menu-item__title">woman</h3>
@@ -45,7 +44,7 @@
                     <li class="menu-item__sub-item">T-Shirts</li>
                     <li class="menu-item__sub-item">Shirts</li>
                 </ul>
-               
+
                 <ul>
                     <li class="header__menu-item menu-item">
                         <h3 class="menu-item__title">kids</h3>
@@ -63,33 +62,45 @@
 
     <main>
         <section class="brand">
-            <img class="brand__image" src="img/upper-man.jpg" alt="photo">
+            <div class="brand__image"></div>
             <div class="brand__wrp">
-                <h1 class="brand__title">the brand<span class="brand__subtitle"><span class="brand__subtitle-pink">of luxerious fashion</span></span></h1>
+                <h1 class="brand__title">the brand<span class="brand__subtitle">of luxerious<span
+                            class="brand__subtitle-pink">fashion</span></span></h1>
             </div>
         </section>
-        
-        <section class="sales">
+
+        <section class="sales container">
             <ul class="sales__list">
-                <li>
-                    <img src="img/for_women.jpg" alt="photo">
-                    <p class="sales__text">30&percnt; off </p>
-                    <h2 class="sales__title">for women</h2>
-                </li>
-                <li>
-                    <img src="img/for_men.jpg" alt="photo">
-                    <p class="sales__text">hot deal</p>
-                    <h2 class="sales__title">for men</h2>
-                </li>
-                <li>
-                    <img src="img/for_kids.jpg" alt="photo">
-                    <p class="sales__text">new arrivals</p>
-                    <h2 class="sales__title">for kids</h2>
-                </li>
-                <li>
+                <div class="sales__card-box">
+                    <li class="sales_card">
+
+                        <img src="img/for_women.jpg" alt="photo">
+
+                        <p class="sales__text">30&percnt; off </p>
+                        <h2 class="sales__title">for women</h2>
+
+
+                    </li>
+                    <li class="sales_card">
+
+                        <img src="img/for_men.jpg" alt="photo">
+
+                        <p class="sales__text">hot deal</p>
+                        <h2 class="sales__title">for men</h2>
+
+                    </li>
+                    <li class="sales_card">
+
+                        <img class="sales__card3" src="img/for_kids.jpg" alt="photo">
+                        <p class="sales__text">new arrivals</p>
+                        <h2 class="sales__title">for kids</h2>
+
+                    </li>
+                </div>
+                <li class="sales__card">
                     <img src="img/accesories.jpg" alt="photo">
-                    <p class="sales__text">luxirous & trendy</p>
-                    <h2 class="sales__title">accesories</h2>
+                    <p class="sales__text sales_wide-card">luxirous & trendy</p>
+                    <h2 class="sales__title sales_wide-card"">accesories</h2>
                 </li>
             </ul>
         </section>
@@ -98,11 +109,12 @@
             <p>Shop for items based on what we featured in this week</p>
             <ul>
                 <li>
-                    <img src="img/man_up_left.jpg" alt="photo">
-                    <h3>ellery x m'o capsule</h3>
-                    <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
-                        teams up with Moda Operandi.</p>
-                    <p>&#36;52.00</p>
+                    <img src=" img/man_up_left.jpg" alt="photo">
+                        <h3>ellery x m'o capsule</h3>
+                        <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym
+                            Ellery
+                            teams up with Moda Operandi.</p>
+                        <p>&#36;52.00</p>
                 </li>
                 <li>
                     <img src="img/woman_up_centr.jpg" alt="photo">
