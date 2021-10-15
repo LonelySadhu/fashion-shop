@@ -4,6 +4,17 @@
     --bright-pink: #F16D7F;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0)
+}
+
 .page {
     font-family: Lato;
     font-size: 14px;
@@ -45,6 +56,26 @@
     background-color: transparent;
 }
 
+.header__menu-btn:hover +.header__nav {
+  display: block;
+}
+
+.header__nav:hover {
+  display: block;
+}
+
+.header__menu-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.header-menu-item {
+  color: darkblue;
+  text-decoration: none;
+}
+
+
 .brand {
     display: flex;
     height: 764px;
@@ -59,7 +90,6 @@
 .brand__wrp {
     background-color: var(--light-pink);
     flex-grow: 1;
-    /* padding: 0 0 0 92px; */
     display: flex;
     align-items: center;
 }
@@ -71,8 +101,19 @@
     font-weight: 900;
     line-height: 58px;
     text-transform: uppercase;
+    position: relative;
 
 
+}
+
+.brand__title::before {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 92px;
+    top: 5px;
+    left: -16px;
+    background-color: var(--bright-pink);
 }
 
 .brand__subtitle {
@@ -188,11 +229,30 @@
   width: 360px;
   height: 580px;
   margin: 30px 0;
+  background-color: var(--ghost-white);
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.item__btn {
+  display: none;
+}
+
+.item__btn--text {
+  margin-left: 10px;
+  font-family: Lato;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: normal;  
+  color: #FFFFFF;
+  vertical-align: middle;
 }
 
 .fetured__link {
   display: block;
   background: #f8f8f8;
+  text-decoration: none;
 }
 
 .fetured__img {
@@ -205,17 +265,24 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
   position: absolute;
-  top: 0;
   display: none;
 }
 
 .fetured__img:hover .item__btn {
   display: block;
+  position: absolute;
+  top: 45%;
+  right: 30%;
+  background-color: transparent;
+  border: 1px solid #FFFFFF;
+  width: 138px;
+  height: 43px;
 }
 
 .fetured__img:hover::before {
   display: block;
 }
+
 
 .fetured__sub-title {
   text-transform: uppercase;
@@ -243,7 +310,24 @@
 .fetured__btn {
   text-align: center;
   margin-bottom: 95px;
+  margin-top: 50px;
 }
+
+.featured--browse-btn {
+  width: 211px;
+  height: 47px;
+  color:var(--bright-pink);
+  border-color: var(--bright-pink);
+  font-size: 16px;
+  line-height: 19px;
+  background-color: transparent;
+}
+
+.featured--browse-btn:hover {
+  background-color: var(--bright-pink);
+  color: #fff;
+}
+
 
 .skills {
   width: 100%;
