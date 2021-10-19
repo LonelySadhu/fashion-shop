@@ -2,6 +2,7 @@
     --black: #222222;
     --light-pink: #F1E4E6;
     --bright-pink: #F16D7F;
+    --background:#FFF;
 }
 
 .visually-hidden {
@@ -33,14 +34,63 @@
 }
 
 .header__nav {
+    position: absolute;
+    background-color: var(--background);
+    right: -128px;
+    bottom: -764px;
     display: none;
+    width: 232px;
+    height: 764px;
 }
+
+.header__nav--show {
+  display: block;
+  z-index: 2;
+}
+
+.header__nav-title{
+  margin-top: 37px;
+  margin-left: 34px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.menu-item__title {
+  font-family: Lato;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  font-style: normal;
+  color: var(--bright-pink);
+  text-transform: uppercase;
+  margin-top: 24px;
+  margin-left: 34px;
+}
+
+.menu-item__sub-item {
+  font-family: Lato;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  font-style: normal;
+  color: #6F6E6E;
+  margin-top: 12px;
+  margin-left: 54px;
+}
+
 
 .header__wrp {
     display: flex;
     justify-content: space-between;
     align-items: center;
     min-height: 75px;
+    position: relative;
+    
 }
 
 .header__logo {
@@ -56,18 +106,16 @@
     background-color: transparent;
 }
 
-.header__menu-btn:hover +.header__nav {
-  display: block;
-}
-
-.header__nav:hover {
-  display: block;
-}
-
 .header__menu-list {
   padding: 0;
   margin: 0;
   list-style: none;
+  font-family: Lato;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  font-style: normal; 
+  color: #6F6E6E;
 }
 
 .header-menu-item {
@@ -437,7 +485,29 @@
   height: 46px;
   background-color: #e1e1e1;
   border-radius: 23px 0 0 23px;
-  padding: 0 30px;
+  padding: 0 22px;
+  border-color:  #e1e1e1;
+  
+}
+
+.form-email__submit {
+  height: 50px;
+  width: 100px;
+  border-radius: 0 23px 23px 0;
+  text-align: center;
+  padding: 0 22px;
+  float:right;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-family: Lato;
+  background-color: var(--bright-pink);
+  color: #FFFFFF;
+  border-color: var(--bright-pink);
 }
 
 .bottom-footer {
@@ -464,8 +534,9 @@
   transition: color 0.3s ease 0s;
 }
 
-.bottom-footer__social:hover {
-  color: #f16d7f;
+.bottom-footer__item:hover {
+  background-color: #f16d7f;
+  opacity: 0.6
 }
 
 .bottom-footer__list {
