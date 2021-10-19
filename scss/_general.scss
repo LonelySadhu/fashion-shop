@@ -1,0 +1,23 @@
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0)
+  }
+  
+  .page {
+      font-family: Lato;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 17px;
+  }
+  
+  .container {
+      max-width: 1140px;
+      margin: 0 auto;
+  }
