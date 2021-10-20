@@ -16,11 +16,11 @@
                <img class="header__search" src="img/loupe.svg" alt="search">
             </div>
             <div class="header__wrp-controls">
-               <button class="header__menu-btn" type="button"><img src="img/burger.svg" alt="menu"></button>
+               <button id="burger" class="header__menu-btn" type="button"><img src="img/burger.svg" alt="menu"></button>
                <a class="header__link" href="#"><img src="img/account.svg" alt="signin"></a>
                <a href="#" class="header__link"><img src="img/basket.svg" alt="basket"></a>
             </div>
-            <nav class="header__nav">
+            <nav id="menu" class="header__nav">
                <h2 class="header__nav-title">menu</h2>
                <ul class="header__menu-list">
                   <li class="header__menu-item menu-item">
@@ -108,7 +108,7 @@
                      <a href="#" class="fetured__link">
                         <div class="fetured__img">
                            <img src="img/man_up_left.jpg" alt="photo of product">
-                           <button type="button" class="item__btn _icon-cart"><span class="item__btn--text">Add to Cart</span></button>
+                           <button type="button" class="item__btn _icon-cart"><img src="img/cart-card.svg" alt="cart"><span class="item__btn--text">Add to Cart</span></button>
                         </div>
                         <h3 class="fetured__sub-title">ellery x m'o capsule</h3>
                         <p class="fetured__sub-text">Known for her sculptural takes on traditional tailoring, Australian
@@ -121,7 +121,7 @@
                      <a href="#" class="fetured__link">
                         <div class="fetured__img">
                            <img src="img/woman_up_centr.jpg" alt="photo of product">
-                           <button type="button" class="item__btn _icon-cart"><span class="item__btn--text">Add to Cart</span></button>
+                           <button type="button" class="item__btn _icon-cart"><img src="img/cart-card.svg"><span class="item__btn--text">Add to Cart</span></button>
                         </div>
                         <h3 class="fetured__sub-title">ellery x m'o capsule</h3>
                         <p class="fetured__sub-text">Known for her sculptural takes on traditional tailoring, Australian
@@ -134,7 +134,7 @@
                      <a href="#" class="fetured__link">
                         <div class="fetured__img">
                            <img src="img/man_up_right.jpg" alt="photo of product">
-                           <button type="button" class="item__btn _icon-cart"><span class="item__btn--text">Add to Cart</span></button>
+                           <button type="button" class="item__btn _icon-cart"><img src="img/cart-card.svg"><span class="item__btn--text">Add to Cart</span></button>
                         </div>
                         <h3 class="fetured__sub-title">ellery x m'o capsule</h3>
                         <p class="fetured__sub-text">Known for her sculptural takes on traditional tailoring, Australian
@@ -147,7 +147,7 @@
                      <a href="#" class="fetured__link">
                         <div class="fetured__img">
                            <img src="img/man_down_left.jpg" alt="photo of product">
-                           <button type="button" class="item__btn _icon-cart"><span class="item__btn--text">Add to Cart</span></button>
+                           <button type="button" class="item__btn _icon-cart"><img src="img/cart-card.svg"><span class="item__btn--text">Add to Cart</span></button>
                         </div>
                         <h3 class="fetured__sub-title">ellery x m'o capsule</h3>
                         <p class="fetured__sub-text">Known for her sculptural takes on traditional tailoring, Australian
@@ -160,7 +160,7 @@
                      <a href="#" class="fetured__link">
                         <div class="fetured__img">
                            <img src="img/woman_down_centr.jpg" alt="photo of product">
-                           <button type="button" class="item__btn _icon-cart"><span class="item__btn--text">Add to Cart</span></button>
+                           <button type="button" class="item__btn _icon-cart"><img src="img/cart-card.svg"><span class="item__btn--text">Add to Cart</span></button>
                         </div>
                         <h3 class="fetured__sub-title">ellery x m'o capsule</h3>
                         <p class="fetured__sub-text">Known for her sculptural takes on traditional tailoring, Australian
@@ -173,7 +173,7 @@
                      <a href="#" class="fetured__link">
                         <div class="fetured__img">
                            <img src="img/woman_down_right.jpg" alt="photo of product">
-                           <button type="button" class="item__btn _icon-cart"><span class="item__btn--text">Add to Cart</span></button>
+                           <button type="button" class="item__btn _icon-cart"><img src="img/cart-card.svg"><span class="item__btn--text">Add to Cart</span></button>
                         </div>
                         <h3 class="fetured__sub-title">ellery x m'o capsule</h3>
                         <p class="fetured__sub-text">Known for her sculptural takes on traditional tailoring, Australian
@@ -185,7 +185,7 @@
                </ul>
             </div>
             <div class="fetured__btn">
-               <button type="button" class="btn">Browse All Product</button>
+               <button type="button" class="featured--browse-btn">Browse All Product</button>
             </div>
          </div>
       </section>
@@ -194,20 +194,20 @@
             <div class="skills__body">
                <h2 class="skills__title visually-hidden">Skills</h2>
                <ul class="skills__list">
-                  <li class="skills__item">
-                     <div class="skills__ico _icon-car"></div>
+                  <li class="skills__item">                  
+                     <img src="img/truck.svg" alt="logo">
                      <h3 class= "skills__sub-title">Free Delivery</h3>
                      <p class="skills__sub-text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive
                         models.</p>
                   </li>
                   <li class="skills__item">
-                     <div class="skills__ico _icon-percent"></div>
+                     <img src="img/percent.svg" alt="logo">
                      <h3 class= "skills__sub-title">Sales & discounts</h3>
                      <p class="skills__sub-text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive
                         models.</p>
                   </li>
                   <li class="skills__item">
-                     <div class="skills__ico _icon-boss"></div>
+                     <img src="img/crown.svg" alt="logo">
                      <h3 class= "skills__sub-title">Quality assurance</h3>
                      <p class="skills__sub-text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive
                         models.</p>
@@ -224,8 +224,8 @@
                <div class="top-footer__comment">
                   <article>
                      <div class="top-footer__img"><img src="img/wm_head.jpg" class="top-footer__image" alt="comment"></div>
-                     <p class="top-footer__text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus
-                        condimentum“</p>
+                     <q class="top-footer__text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus
+                        condimentum“</q>
                   </article>
                </div>
                <div class="top-footer__email email-footer">
@@ -236,8 +236,8 @@
                         <form action="" method="" name="contact_form">
                            <fieldset>
                               <legend class="visually-hidden">Контактная информация</legend>
-                                 <label><input class="form-email__input" type="text" name="email" placeholder="Ender Your Email"></label>
-                                 <label><input class="form-email__submit btn--rad" type="submit" value="Subscribe"></label>
+                                 <label><input class="form-email__input" type="text" name="email" placeholder="Enter Your Email"></label>
+                                 <label><input class="form-email__submit" type="submit" value="Subscribe"></label>
                            </fieldset>
                         </form>
                      </div>
@@ -252,15 +252,16 @@
                <p class="bottom-footer__text">© 2021 Brand All Rights Reserved.</p>
                <div class="bottom-footer__social">
                   <ul class="bottom-footer__list">
-                     <li class="bottom-footer__item"><a href="#" class="bottom-footer__social _icon-facebook"></a></li>
-                     <li class="bottom-footer__item"><a href="#" class="bottom-footer__social _icon-instagram"></a></li>
-                     <li class="bottom-footer__item"><a href="#" class="bottom-footer__social _icon-twitter"></a></li>
-                     <li class="bottom-footer__item"><a href="#" class="bottom-footer__social _icon-vk"></a></li>
+                     <li class="bottom-footer__item"><a href="#" class="bottom-footer__social"><img src="img/facebook_logo.svg" alt="social-logo"></a></li>
+                     <li class="bottom-footer__item"><a href="#" class="bottom-footer__social"><img src="img/insta_logo.svg" alt="social-logo"></a></li>
+                     <li class="bottom-footer__item"><a href="#" class="bottom-footer__social"><img src="img/d_logo.svg" alt="social-logo"></a></li>
+                     <li class="bottom-footer__item"><a href="#" class="bottom-footer__social"></a><img src="img/twit_logo.svg" alt="social-logo"></li>
                   </ul>
                </div>
             </div>
          </div>
       </div>
    </footer>
+   <script src="js/script.js"></script>
    </body>
 </html>
