@@ -1,9 +1,21 @@
-@import './reset';
+@import 'reset';
 
-@import './varibles';
+@import 'varibles';
 
-@import './mixins.scss';
+@import 'mixins';
 
-@import './general';
+@import 'general';
 
-@import './blocks/header';
+@import 'blocks/header';
+
+@import 'blocks/menu';
+
+@import 'blocks/brand';
+
+@import 'blocks/sale';
+
+@import 'blocks/featured';
+
+@import 'blocks/skills';
+
+@import 'blocks/footer';

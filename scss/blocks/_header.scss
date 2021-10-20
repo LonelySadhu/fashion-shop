@@ -1,0 +1,36 @@
+.header {
+    background-color: $black;
+
+    .header__wrp {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 75px;
+        position: relative;
+
+        .header__logo {
+            margin: 0 41px 0 31px;
+        }
+
+        .header__menu-btn {
+            border: none;
+            background-color: transparent;
+        }
+
+        .header__link {
+            margin-left: 33px;
+        }
+
+        .icon_burger {
+            fill: $svg_filling;
+        }
+
+        .icon_burger:active {
+            fill: $svg_hover;
+        }
+
+        .icon:hover {
+            opacity: 0.6;
+        }
+    }
+}

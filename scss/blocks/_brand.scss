@@ -1,0 +1,43 @@
+.brand {
+    display: flex;
+    height: 764px;
+
+    .brand__image {
+        min-width: 800px;
+        background-color: $light-pink;
+        background-image: url('../img/upper-man.png');
+    }
+    
+    .brand__wrp {
+        background-color: $light-pink;
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+    }
+    
+    .brand__title {   
+        @include font(Lato,48px,58px,900,);
+        text-transform: uppercase;
+        position: relative;
+    }
+        
+    .brand__title::before {
+        position: absolute;
+        width: 12px;
+        height: 92px;
+        top: 5px;
+        left: -16px;
+        background-color: $bright-pink;
+        content: '';
+    }
+        
+    .brand__subtitle {
+        @include font(Lato,37px,44px,700);       
+        display: flex;
+    }
+
+    .brand__subtitle-pink {
+        color: $bright-pink;
+        margin-left: 5px;
+    }
+}
