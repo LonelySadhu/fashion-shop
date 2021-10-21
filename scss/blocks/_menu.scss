@@ -9,12 +9,8 @@
 }
 
 .header__nav-title {
+    @include font(Lato, 14px, 17px, bold);
     margin-left: 34px;
-    font-family: Lato;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 17px;
     color: $title;
     text-transform: uppercase;
     margin-top: 37px;
@@ -23,41 +19,36 @@
 .header__menu-list {
     margin: 0;
     list-style: none;
-    font-family: Lato;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 17px;
-    font-style: normal;
-    color: #6F6E6E;
+    @include font(Lato, 14px, 17px);
+    color: $menu-item;
     padding: 0;
 
-    .header-menu-item {
-        text-decoration: none;
-    }
-
-    .menu-item__title {
-        font-size: 14px;
-        line-height: 17px;
-        font-style: normal;
-        color: $bright-pink;
-        text-transform: uppercase;
-        margin-top: 24px;
-        margin-left: 34px;
-        font-family: Lato;
-        font-weight: normal;
-    }
-
-    .menu-item__sub-item {
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 17px;
-        font-style: normal;
-        color: #6F6E6E;
-        margin-top: 12px;
-        margin-left: 54px;
-        font-family: Lato;
-    }
 }
+
+.menu-item__link {
+    text-decoration: none;
+    color: $menu-item;
+}
+
+.menu-item__link:visited {
+    color: $menu-item;
+}
+
+.menu-item__title {
+    @include font(Lato, 14px, 17px);
+    color: $bright-pink;
+    text-transform: uppercase;
+    margin-top: 24px;
+    margin-left: 34px;
+}
+
+.menu-item__sub-item {
+    @include font(Lato, 14px, 17px);
+    color: $menu-item;
+    margin-top: 12px;
+    margin-left: 54px;
+}
+
 
 
 .header__nav--show {

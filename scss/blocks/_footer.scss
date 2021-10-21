@@ -70,9 +70,6 @@
     padding: 0 22px;
     float:right;
     @include font(Lato,14px,17px);
-    display: flex;
-    align-items: center;
-    text-align: center;
     background-color: $bright-pink;
     color: $background;
     border-color: $bright-pink;
