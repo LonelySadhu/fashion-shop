@@ -76,6 +76,18 @@ table {
   margin: 0 auto;
 }
 
+@media (max-width: 1599px) {
+  .container {
+    width: 736px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: 342px;
+  }
+}
+
 .header {
   background-color: #222222;
 }
@@ -117,6 +129,12 @@ table {
 
 .header .header__wrp .icon:hover {
   opacity: 0.6;
+}
+
+@media (max-width: 375px) {
+  .header .header__link {
+    display: none;
+  }
 }
 
 .header__nav {

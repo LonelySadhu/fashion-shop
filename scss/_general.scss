@@ -21,3 +21,17 @@
       max-width: 1140px;
       margin: 0 auto;
   }
+
+  @media (max-width: $dekstop-width) {
+
+    .container {
+        width: 736px;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+      
+    .container {
+        width: 342px;
+    } 
+  }
