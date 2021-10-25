@@ -1,0 +1,129 @@
+.footer__top {
+    width: 100%;
+    min-height: 448px;
+    background: url('../../img/footer.jpg') no-repeat top center;
+    background-size: cover;
+  }
+  
+  .top-footer__body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .top-footer__comment {
+    width: 360px;
+    height: 448px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .top-footer__img {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .top-footer__image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  
+  .top-footer__text {
+    display: block;
+    @include font(Lato,20px);
+    text-align: center;
+    color: $skills_bkg;
+  }
+  
+  .email-footer__title {
+    @include font(Lato,24px,30px,bold);
+    color: $skills_bkg;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .email-footer__text {
+    @include font(Lato,18px,30px,bold);
+    color: $skills_bkg;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .form-email__input {
+    width: 256px;
+    height: 46px;
+    background-color:$footer_bkg;
+    border-radius: 23px 0 0 23px;
+    padding: 0 22px;
+    border-color: $footer_bkg;
+    color: $skills_bkg;
+  }
+  
+  .form-email__submit {
+    height: 50px;
+    width: 100px;
+    border-radius: 0 23px 23px 0;
+    text-align: center;
+    padding: 0 22px;
+    float:right;
+    @include font(Lato,14px,17px);
+    background-color: $bright-pink;
+    color: $background;
+    border-color: $bright-pink;
+  }
+  
+  .bottom-footer {
+    width: 100%;
+    height: 79px;
+    background: $skills_bkg;
+  }
+  
+  .bottom-footer__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 79px;
+  }
+  
+  .bottom-footer__text {
+    font-size: 16px;
+    line-height: 150%;
+    color: $skills_text_color;
+  }
+  
+  .bottom-footer__social {
+    color: $background;
+    transition: color 0.3s ease 0s;
+  }
+  
+  
+  .bottom-footer__list {
+    display: flex;
+  }
+  
+  .bottom-footer__item {
+    font-size: 30px;
+    padding: 5px 5px;
+  }
+
+  .outer {
+      fill: $background;
+  }
+  .inner {
+      fill:$black;
+  }
+
+  .footer__social-icon:hover .outer{
+      fill: $bright-pink;
+  }
+  
+  .footer__social-icon:hover .inner {
+      fill: $background;
+  }
+
+
+
+

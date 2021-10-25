@@ -1,0 +1,57 @@
+.header__nav {
+    position: absolute;
+    background-color: $background;
+    right: -128px;
+    bottom: -764px;
+    display: none;
+    width: 232px;
+    height: 764px;
+}
+
+.header__nav-title {
+    @include font(Lato, 14px, 17px, bold);
+    margin-left: 34px;
+    color: $title;
+    text-transform: uppercase;
+    margin-top: 37px;
+}
+
+.header__menu-list {
+    margin: 0;
+    list-style: none;
+    @include font(Lato, 14px, 17px);
+    color: $menu-item;
+    padding: 0;
+
+}
+
+.menu-item__link {
+    text-decoration: none;
+    color: $menu-item;
+}
+
+.menu-item__link:visited {
+    color: $menu-item;
+}
+
+.menu-item__title {
+    @include font(Lato, 14px, 17px);
+    color: $bright-pink;
+    text-transform: uppercase;
+    margin-top: 24px;
+    margin-left: 34px;
+}
+
+.menu-item__sub-item {
+    @include font(Lato, 14px, 17px);
+    color: $menu-item;
+    margin-top: 12px;
+    margin-left: 54px;
+}
+
+
+
+.header__nav--show {
+    display: block;
+    z-index: 2;
+}
