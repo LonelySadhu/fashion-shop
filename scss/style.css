@@ -76,15 +76,15 @@ table {
   margin: 0 auto;
 }
 
-@media (max-width: 1599px) {
+@media (max-width: 768px) {
   .container {
-    width: 736px;
+    max-width: 736px;
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 375px) {
   .container {
-    width: 342px;
+    max-width: 342px;
   }
 }
 
@@ -106,6 +106,12 @@ table {
   position: relative;
 }
 
+@media (max-width: 768px) {
+  .header .header__wrp .header__wrp-controls {
+    margin-right: 20px;
+  }
+}
+
 .header .header__wrp .header__logo {
   margin: 0 41px 0 31px;
 }
@@ -119,6 +125,12 @@ table {
   margin-left: 33px;
 }
 
+@media (max-width: 375px) {
+  .header .header__wrp .header__link {
+    display: none;
+  }
+}
+
 .header .header__wrp .icon_burger {
   fill: #E8E8E8;
 }
@@ -129,12 +141,6 @@ table {
 
 .header .header__wrp .icon:hover {
   opacity: 0.6;
-}
-
-@media (max-width: 375px) {
-  .header .header__link {
-    display: none;
-  }
 }
 
 .header__nav {
@@ -215,10 +221,30 @@ table {
   height: 764px;
 }
 
+@media (max-width: 768px) {
+  .brand {
+    height: 369px;
+  }
+}
+
 .brand .brand__image {
   min-width: 800px;
   background-color: #F1E4E6;
   background-image: url("../img/upper-man.png");
+}
+
+@media (max-width: 768px) {
+  .brand .brand__image {
+    min-width: 385px;
+    height: 369px;
+    background-size: 385px 369px;
+  }
+}
+
+@media (max-width: 375px) {
+  .brand .brand__image {
+    display: none;
+  }
 }
 
 .brand .brand__wrp {
@@ -234,6 +260,12 @@ table {
           align-items: center;
 }
 
+@media (max-width: 375px) {
+  .brand .brand__wrp {
+    min-height: 363px;
+  }
+}
+
 .brand .brand__title {
   font-family: Lato;
   font-size: 48px;
@@ -242,6 +274,26 @@ table {
   font-style: normal;
   text-transform: uppercase;
   position: relative;
+}
+
+@media (max-width: 768px) {
+  .brand .brand__title {
+    font-family: Lato;
+    font-size: 44px;
+    line-height: 52px;
+    font-weight: 900;
+    font-style: normal;
+  }
+}
+
+@media (max-width: 375px) {
+  .brand .brand__title {
+    font-family: Lato;
+    font-size: 38px;
+    line-height: 46px;
+    font-weight: 900;
+    font-style: normal;
+  }
 }
 
 .brand .brand__title::before {
@@ -254,6 +306,12 @@ table {
   content: '';
 }
 
+@media (max-width: 375px) {
+  .brand .brand__title::before {
+    height: 61px;
+  }
+}
+
 .brand .brand__subtitle {
   font-family: Lato;
   font-size: 37px;
@@ -263,6 +321,26 @@ table {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (max-width: 768px) {
+  .brand .brand__subtitle {
+    font-family: Lato;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 700;
+    font-style: normal;
+  }
+}
+
+@media (max-width: 375px) {
+  .brand .brand__subtitle {
+    font-family: Lato;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    font-style: normal;
+  }
 }
 
 .brand .brand__subtitle-pink {

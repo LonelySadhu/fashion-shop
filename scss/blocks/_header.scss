@@ -8,6 +8,12 @@
         min-height: 75px;
         position: relative;
 
+        .header__wrp-controls {
+            @include tablet {
+                margin-right: 20px;
+            }
+        }
+
         .header__logo {
             margin: 0 41px 0 31px;
         }
@@ -19,6 +25,9 @@
 
         .header__link {
             margin-left: 33px;
+            @include mobile {
+                display: none;
+            }
         }
 
         .icon_burger {
@@ -35,10 +44,4 @@
     }
 }
 
-@media (max-width: $mobile-width) {
-    .header {
-        .header__link {
-            display: none;
-        }
-    }
-}
+

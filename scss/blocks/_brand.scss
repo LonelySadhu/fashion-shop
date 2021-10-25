@@ -1,11 +1,25 @@
 .brand {
     display: flex;
     height: 764px;
+    @include tablet {
+        height: 369px;
+        
+    }
 
     .brand__image {
         min-width: 800px;
         background-color: $light-pink;
         background-image: url('../img/upper-man.png');
+
+        @include tablet {
+            min-width: 385px;
+            height: 369px;
+            background-size: 385px 369px;
+        }
+
+        @include mobile {
+            display: none;
+        }
     }
     
     .brand__wrp {
@@ -13,12 +27,22 @@
         flex-grow: 1;
         display: flex;
         align-items: center;
+        @include mobile {
+            min-height: 363px;
+        }
+        
     }
     
     .brand__title {   
-        @include font(Lato,48px,58px,900,);
+        @include font(Lato,48px,58px,900);
         text-transform: uppercase;
         position: relative;
+        @include tablet {
+            @include font(Lato,44px,52px,900)
+        }
+        @include mobile {
+            @include font(Lato,38px,46px,900)
+        }
     }
         
     .brand__title::before {
@@ -29,11 +53,20 @@
         left: -16px;
         background-color: $bright-pink;
         content: '';
+        @include mobile {
+            height: 61px;
+        }
     }
         
     .brand__subtitle {
         @include font(Lato,37px,44px,700);       
         display: flex;
+        @include tablet {
+            @include font(Lato,24px, 29px,700)
+        }
+        @include mobile {
+            @include font(Lato,20px, 24px,700)
+        }
     }
 
     .brand__subtitle-pink {
