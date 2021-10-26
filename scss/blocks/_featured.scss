@@ -1,6 +1,9 @@
 .fetured__txt {
     margin: 96px 0 18px 0;
     text-align: center;
+    @include tablet {
+      margin: 154px 0 72px 0 ;
+    }
   }
   
   .fetured__title {
@@ -26,6 +29,9 @@
     background-color: $background;
     margin-bottom: 30px;
     position: relative;
+    @include tablet {
+      margin-bottom: 16px;
+    }
   }
   
   .item__btn {
@@ -99,6 +105,10 @@
     text-align: center;
     margin-bottom: 95px;
     margin-top: 50px;
+    @include tablet {
+      margin-top: 32px;
+      margin-bottom: 65px;
+    }
   }
   
   .featured--browse-btn {

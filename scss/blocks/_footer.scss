@@ -9,6 +9,11 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    @include tablet {
+      flex-direction: column;
+      height: 614px;
+      
+    }
   }
   
   .top-footer__comment {
@@ -16,40 +21,75 @@
     height: 448px;
     display: flex;
     align-items: center;
+    @include tablet {
+      height: auto;
+    }
+    @include mobile {
+      width: 340px;
+    }
   }
   
   .top-footer__img {
     text-align: center;
     margin-bottom: 30px;
+    @include tablet {
+      margin-bottom: 20px;
+      margin-top: 30px;
+    }
+    
   }
   
   .top-footer__image {
     width: 150px;
     height: 150px;
     border-radius: 50%;
+    @include mobile {
+      width: 35%;
+      height: auto;
+    }
   }
   
   .top-footer__text {
     display: block;
-    @include font(Lato,20px);
+    @include font(Lato,20px,24px,400,italic);
     text-align: center;
     color: $skills_bkg;
+    @include mobile {
+      @include font(Lato,18px,22px,400,italic)
+    }
+  }
+
+  .email-footer__form {
+    @include tablet {
+      margin-bottom: 100px;
+    }
+
   }
   
   .email-footer__title {
-    @include font(Lato,24px,30px,bold);
+    @include font(Lato,24px,30px,700);
     color: $skills_bkg;
     text-transform: uppercase;
     margin-bottom: 15px;
     text-align: center;
+    @include tablet {
+      margin-bottom: 0;
+    }
   }
   
   .email-footer__text {
-    @include font(Lato,18px,30px,bold);
+    @include font(Lato,18px,30px,400);
     color: $skills_bkg;
     text-transform: uppercase;
     margin-bottom: 30px;
     text-align: center;
+    @include tablet {
+      margin-bottom: 16px;
+    }
+    @include mobile {
+      @include font(Lato,14px,21px,400);
+      margin-bottom: 22px;
+    }
   }
   
   .form-email__input {
@@ -60,6 +100,10 @@
     padding: 0 22px;
     border-color: $footer_bkg;
     color: $skills_bkg;
+    @include mobile {
+      width: 58%;
+
+    }
   }
   
   .form-email__submit {
@@ -73,12 +117,20 @@
     background-color: $bright-pink;
     color: $background;
     border-color: $bright-pink;
+    @include mobile {
+      width: 26%;
+      padding: 0 12px;
+
+    }
   }
   
   .bottom-footer {
     width: 100%;
     height: 79px;
     background: $skills_bkg;
+    @include mobile {
+      height: 143px;
+    }
   }
   
   .bottom-footer__body {
@@ -86,17 +138,33 @@
     justify-content: space-between;
     align-items: center;
     height: 79px;
+    @include tablet {
+      margin-right: 32px;
+    }
+    @include mobile {
+      flex-direction: column-reverse;
+      height: auto;
+    }
   }
   
   .bottom-footer__text {
     font-size: 16px;
     line-height: 150%;
     color: $skills_text_color;
+    @include tablet {
+      margin-left: 32px;
+    }
+    @include mobile {
+      margin-top: 40px;
+    }
   }
   
   .bottom-footer__social {
     color: $background;
     transition: color 0.3s ease 0s;
+    @include mobile {
+      margin-top: 33px;
+    }
   }
   
   
