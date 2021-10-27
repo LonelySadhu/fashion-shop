@@ -14,6 +14,7 @@
         justify-content: space-between;
         @include mobile {
             flex-direction: column;
+            align-items: center;
         }
     }
 
@@ -24,9 +25,12 @@
             height: 168px;
         }
         @include mobile {
-            width: 100%;
+            width: 85%;
+            background-size: auto;
             height: 247px;
             margin-top: 32px;
+            
+    
         }
 
     }

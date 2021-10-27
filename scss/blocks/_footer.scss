@@ -144,6 +144,7 @@
     @include mobile {
       flex-direction: column-reverse;
       height: auto;
+      margin-right: 0;
     }
   }
   

@@ -20,6 +20,12 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    @include tablet {
+      justify-content: space-around;
+    }
+    @include mobile {
+      justify-content: center;
+    }
   }
   
   .fetured__item {
@@ -52,7 +58,7 @@
   }
   
   .fetured__img {
-    position: relative;
+    position: relative;   
   }
   
   .fetured__img::before {

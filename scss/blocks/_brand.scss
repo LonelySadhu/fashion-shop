@@ -41,6 +41,7 @@
         @include font(Lato,48px,58px,900);
         text-transform: uppercase;
         position: relative;
+        margin-left: 68px;
         @include tablet {
             @include font(Lato,44px,52px,900);
             margin-right: 32px;
