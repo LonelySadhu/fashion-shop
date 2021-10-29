@@ -22,16 +22,65 @@
       margin: 0 auto;
   }
 
-  @media (max-width: $dekstop-width) {
+  @media (max-width: $tablet-width) {
 
     .container {
-        width: 736px;
+        max-width: 96%;
     }
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $mobile-width) {
       
     .container {
-        width: 342px;
+        max-width: 91%;
     } 
   }
+
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: url(/fonts/Lato-regular.woff2),
+        url(/fonts/Lato-regular.woff);
+  }
+
+  @font-face {
+    font-family: 'Lato';
+    font-style: italic;
+    font-weight: 400;
+    src: url(/fonts/Lato-italic.woff2),
+        url(/fonts/Lato-italic.woff);
+  }
+
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    src: url(/fonts/Lato-light.woff2),
+        url(/fonts/Lato-light.woff);
+  }
+
+  @font-face {
+    font-family: 'Lato';
+    font-style: italic;
+    font-weight: 300;
+    src: url(/fonts/Lato-lightitalic.woff2),
+        url(/fonts/Lato-lightitalic.woff);
+  }
+
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: url(/fonts/Lato-bold.woff2),
+        url(/fonts/Lato-bold.woff);
+  }
+
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    src: url(/fonts/Lato-black.woff2),
+        url(/fonts/Lato-black.woff);
+  }
+

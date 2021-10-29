@@ -1,11 +1,29 @@
 .brand {
     display: flex;
     height: 764px;
+    @include tablet {
+        height: 369px;
+        
+    }
 
     .brand__image {
-        min-width: 800px;
-        background-color: $light-pink;
+        min-width: 50%;
+        background: rgba(113, 103, 105, 0.08);
         background-image: url('../img/upper-man.png');
+        background-size: auto;
+        background-position: center;
+
+        @include tablet {
+            width: 50%;
+            height: auto;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        @include mobile {
+            display: none;
+        }
     }
     
     .brand__wrp {
@@ -13,12 +31,26 @@
         flex-grow: 1;
         display: flex;
         align-items: center;
+        @include mobile {
+            min-height: 363px;
+        }
+        
     }
     
     .brand__title {   
-        @include font(Lato,48px,58px,900,);
+        @include font(Lato,48px,58px,900);
         text-transform: uppercase;
         position: relative;
+        margin-left: 68px;
+        @include tablet {
+            @include font(Lato,44px,52px,900);
+            margin-right: 32px;
+            margin-left: 45px;
+        }
+        @include mobile {
+            @include font(Lato,38px,46px,900);
+            margin-left: 56px;
+        }
     }
         
     .brand__title::before {
@@ -29,11 +61,25 @@
         left: -16px;
         background-color: $bright-pink;
         content: '';
+        @include tablet {
+            height: 74px;
+            margin-right: 16px;
+        }
+        @include mobile {
+            height: 61px;
+            margin-right: 15px;
+        }
     }
         
     .brand__subtitle {
         @include font(Lato,37px,44px,700);       
         display: flex;
+        @include tablet {
+            @include font(Lato,22px, 29px,700)
+        }
+        @include mobile {
+            @include font(Lato,20px, 24px,700)
+        }
     }
 
     .brand__subtitle-pink {
