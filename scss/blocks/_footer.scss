@@ -76,6 +76,10 @@
       margin-bottom: 0;
     }
   }
+
+  .form-email {
+    display: flex;
+  }
   
   .email-footer__text {
     @include font(Lato,18px,30px,400);
@@ -112,7 +116,7 @@
     border-radius: 0 23px 23px 0;
     text-align: center;
     padding: 0 22px;
-    float:right;
+    // float:right;
     @include font(Lato,14px,17px);
     background-color: $bright-pink;
     color: $background;
