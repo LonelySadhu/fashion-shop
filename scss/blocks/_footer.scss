@@ -98,8 +98,9 @@
   
   .form-email__input {
     width: 256px;
-    height: 46px;
+    min-height: 46px;
     background-color:$footer_bkg;
+    border: none;
     border-radius: 23px 0 0 23px;
     padding: 0 22px;
     border-color: $footer_bkg;
@@ -111,12 +112,13 @@
   }
   
   .form-email__submit {
-    height: 50px;
+    min-height: 46px;
     width: 100px;
+    border: none;
     border-radius: 0 23px 23px 0;
     text-align: center;
     padding: 0 22px;
-    // float:right;
+    float: right;
     @include font(Lato,14px,17px);
     background-color: $bright-pink;
     color: $background;
