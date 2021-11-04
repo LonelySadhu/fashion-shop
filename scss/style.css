@@ -1158,7 +1158,18 @@ table {
   background-color: #F1E4E6;
 }
 
-.reg__header .reg__header__title {
+@media (max-width: 475px) {
+  .reg__header .reg__head-title-wrp {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.reg__header .reg__head-title {
   display: inline-block;
   text-transform: uppercase;
   font-family: Lato;
@@ -1172,25 +1183,25 @@ table {
 }
 
 @media (max-width: 768px) {
-  .reg__header .reg__header__title {
+  .reg__header .reg__head-title {
     margin-left: 16px;
   }
 }
 
 @media (max-width: 475px) {
-  .reg__header .reg__header__title {
+  .reg__header .reg__head-title {
     text-align: center;
   }
 }
 
-.reg__box__wrp {
+.reg__box-wrp {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 @media (max-width: 475px) {
-  .reg__box__wrp {
+  .reg__box-wrp {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1199,22 +1210,30 @@ table {
   }
 }
 
-.reg__box__forms {
+.reg__box-forms {
   margin-left: 31px;
   margin-top: 64px;
 }
 
 @media (max-width: 768px) {
-  .reg__box__forms {
+  .reg__box-forms {
     margin-top: 40px;
     margin-left: 16px;
+    width: 50%;
   }
 }
 
 @media (max-width: 475px) {
-  .reg__box__forms {
+  .reg__box-forms {
     margin-top: 40px;
     margin-left: 6px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .reg__box__welcome_text {
+    width: 50%;
   }
 }
 
@@ -1245,6 +1264,12 @@ table {
 }
 
 @media (max-width: 475px) {
+  .input-form {
+    width: 96%;
+  }
+}
+
+@media (max-width: 768px) {
   .input-form {
     width: 96%;
   }
@@ -1290,6 +1315,12 @@ table {
   font-weight: 300;
   font-style: normal;
   color: #B1B1B1;
+}
+
+@media (max-width: 768px) {
+  .reg__box__text {
+    width: 96%;
+  }
 }
 
 @media (max-width: 475px) {

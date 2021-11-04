@@ -6,7 +6,13 @@
     height: 148px;
     background-color: $light-pink;
 
-    .reg__header__title {
+    .reg__head-title-wrp {
+        @include mobile {
+            display: flex;
+            justify-content: center
+        }    
+    }
+    .reg__head-title {
         display: inline-block;
         text-transform: uppercase;
         @include font(Lato,24px,29px);
@@ -22,7 +28,7 @@
     }
 }
 
-.reg__box__wrp {
+.reg__box-wrp {
     display: flex;
     @include mobile {
         flex-direction: column;
@@ -30,16 +36,24 @@
     }
 }
 
-.reg__box__forms {
+.reg__box-forms {
     margin-left: 31px;
     margin-top: 64px;
     @include tablet {
         margin-top: 40px;
         margin-left: 16px;
+        width: 50%;
     }
     @include mobile {
         margin-top: 40px;
         margin-left: 6px;
+        width: 100%;
+    }
+}
+
+.reg__box__welcome_text {
+    @include tablet {
+        width: 50%;
     }
 }
 
@@ -59,6 +73,9 @@
     @include font(Lato,13px,16px,300);
     box-sizing: border-box;
     @include mobile {
+        width: 96%;
+    }
+    @include tablet {
         width: 96%;
     }
 }
@@ -92,6 +109,9 @@
     margin-bottom: 39px;
     @include font(Lato,13px,16px,300);
     color: #B1B1B1;
+    @include tablet {
+        width: 96%;
+    }
     @include mobile {
         width: 96%;
     }
