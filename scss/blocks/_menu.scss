@@ -6,6 +6,16 @@
     display: none;
     width: 232px;
     height: 764px;
+    @include tablet{
+        right: -17px;
+        bottom: -793px;
+        height: 791px;
+    }
+    @include mobile {
+        right: -17px;
+        bottom: -638px;
+        height: 637px;
+    }
 }
 
 .header__nav-title {
