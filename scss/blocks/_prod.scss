@@ -1,0 +1,78 @@
+.prod__head-title {
+
+    background-color: $light-pink;
+
+    .prod__title {
+        min-height: 148px;
+        display: flex;
+        justify-content: space-between;
+
+        .prod__section-title {
+            display: inline-block;
+            @include font(Lato, 24px, 29px, 400);
+            color: $bright-pink;
+            text-transform: uppercase;
+            margin-left: 32px;
+            margin-top: 59px;
+        }
+
+        .prod__dir {
+            display: inline-block;
+            @include font(Lato, 14px, 17px, 300);
+            color: #636363;
+            text-transform: uppercase;
+            margin-top: 32px;
+
+            .select-dir {
+                @include font(Lato, 14px, 17px, 700);
+                color: $bright-pink;
+            }
+        }
+    }
+}
+
+.prod__slider {
+    background-color: $background-slider;
+}
+
+.carousel-item {
+    width:597px !important;
+    height: 724px !important;
+    margin: 0 auto;
+}
+
+.carousel-control-prev-icon {
+    background: rgba(42, 42, 42, 0.15);
+    width: 47px;
+    height: 47px;
+    position: relative;
+}
+.carousel-control-prev-icon::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-image: url('../../img/prev_icon.svg');
+    width: 24px;
+    height: 24px;
+    top: 13px;
+    left: 17px;
+}
+
+.carousel-control-next-icon {
+    background: rgba(42, 42, 42, 0.15);
+    width: 47px;
+    height: 47px;
+    position: relative;
+}
+.carousel-control-next-icon::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-image: url('../../img/next_icon.svg');
+    width: 24px;
+    height: 24px;
+    top: 13px;
+    left: 17px;
+}
