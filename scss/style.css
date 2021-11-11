@@ -955,6 +955,12 @@ table {
   }
 }
 
+.email-footer__fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .email-footer__title {
   font-family: Lato;
   font-size: 24px;
@@ -971,12 +977,6 @@ table {
   .email-footer__title {
     margin-bottom: 0;
   }
-}
-
-.form-email {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .email-footer__text {
@@ -1021,7 +1021,7 @@ table {
 
 @media (max-width: 475px) {
   .form-email__input {
-    width: 58%;
+    width: 57%;
   }
 }
 
@@ -1045,7 +1045,7 @@ table {
 
 @media (max-width: 475px) {
   .form-email__submit {
-    width: 26%;
+    width: 28%;
     padding: 0 12px;
   }
 }
@@ -1494,8 +1494,8 @@ table {
 }
 
 .carousel-item {
-  width: 597px !important;
-  height: 724px !important;
+  width: 52% !important;
+  height: 63% !important;
   margin: 0 auto;
 }
 
