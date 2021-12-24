@@ -65,6 +65,10 @@
     }
 
   }
+
+  .email-footer__fieldset {
+    display: flex;
+  }
   
   .email-footer__title {
     @include font(Lato,24px,30px,700);
@@ -77,9 +81,9 @@
     }
   }
 
-  .form-email {
-    display: flex;
-  }
+  // .form-email {
+  //   display: flex;
+  // }
   
   .email-footer__text {
     @include font(Lato,18px,30px,400);
@@ -106,7 +110,7 @@
     border-color: $footer_bkg;
     color: $skills_bkg;
     @include mobile {
-      width: 58%;
+      width: 57%;
 
     }
   }
@@ -124,7 +128,7 @@
     color: $background;
     border-color: $bright-pink;
     @include mobile {
-      width: 26%;
+      width: 28%;
       padding: 0 12px;
 
     }
