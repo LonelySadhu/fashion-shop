@@ -1,3 +1,6 @@
+.hidden {
+    display: none;
+}
 .header {
     background-color: $black;
 
@@ -29,6 +32,10 @@
                 display: none;
             }
         }
+        .header__cartIconWrap {
+            position: relative;
+            margin-right: 32px;
+        }
 
         .icon_burger {
             fill: $svg_filling;
@@ -41,7 +48,73 @@
         .icon:hover {
             opacity: 0.6;
         }
+        .header__cartIcon:hover {
+            opacity: 0.6;
+        }
+
+        .header__cartIcon:active {
+            opacity: 0.4;
+        }
+
+        .header__cartIconWrap span {
+            display: inline-block;
+            width: 19px;
+            height: 19px;
+            color: white;
+            background: #f16d7f;
+            border-radius: 50%;
+            position: absolute;
+            text-align: center;
+            right: -8px;
+            top: -19px;
+            font-size: 12px;
+            line-height: 19px;
+        }
+        .header__basket {
+            position: absolute;
+            z-index: 3;
+            right: 0;
+            top: 75px;
+            background: white;
+            padding: 10px;
+            border: 1px solid #ebebeb;
+            border-radius: 3px;
+            font-size: 14px;
+        }
+        .header__basketRow {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #ebebeb;
+            padding-bottom: 10px;
+        }
+        .header__basketHeader {
+            font-weight: bold;
+        }
+        
+        .header__basketTotal {
+            font-weight: bold;
+            text-align: right;
+        }
     }
 }
 
+.basketRow {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 10px;
+}
+
+.basketHeader {
+    font-weight: bold;
+}
+
+.basketTotal {
+    font-weight: bold;
+    text-align: right;
+}
 
